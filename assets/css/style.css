@@ -40,6 +40,7 @@ h1,h2,h3 {
 }
 .card {
     border: none;
+    width: 300px;
 }
 
 /*nav bar*/
