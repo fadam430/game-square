@@ -46,10 +46,62 @@
     </div>
     </nav>
     <!-- header section -->
-    
+    <header id="header" class="container section mb-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 text-center text-xl-start">
+                <h1 class="display-3">Sell or Trade Your Games</h1>
+            </div>
+        </div>
+    </header>
 
     <!-- main content -->
-    
+    <section id="selltrade-form" class="container section">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <form>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Sell</label>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                    <label class="form-check-label" for="exampleCheck1">Trade</label>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Game name</label>
+                    <input type="text" class="form-control" id="exampleInputPassword1">
+                </div>
+                <label for="event-type" class="form-label">Platform</label>
+                                    <select id="event-type" class="form-select" name="event-type" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="PC">PC</option>
+                                        <option value="PS">PS</option>
+                                        <option value="Xbox">Xbox</option>
+                                    </select>
+                <label for="event-type" class="form-label mt-2">Condition</label>
+                                    <select id="event-type" class="form-select" name="event-type" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="Excellent">Excellent</option>
+                                        <option value="Very Good">Very Good</option>
+                                        <option value="Good">Good</option>
+                                        <option value="Fair">Fair</option>
+                                        <option value="Bad">Bad</option>
+                                    </select>
+
+                <button type="submit" class="btn btn-primary my-4">Submit</button>
+        </form>
+            </div>
+        </div>
+    </section>
+        
     
     <!-- footer -->
 <!-- mt-auto class keep a footer bottom of the page-->
