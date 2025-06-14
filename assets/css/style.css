@@ -13,6 +13,14 @@
 }
 body {
     color: var(--text-color-light);
+    background-color: var(--background-color);
+}
+h1,h2 {
+    font-family: "Orbitron", sans-serif;
+    color: var(--text-color-light);
+}
+p *{
+    font-family: "Exo 2" sans-serif;
 }
 /*nav bar*/
 
@@ -27,21 +35,32 @@ body {
 .navbar-toggler {
     background-color: var(--background-color);
 }
-#navbar li > a:hover {
+#navbar li  a:hover {
     background-color: var(--interactive-color);
 }
 .active {
     text-decoration: underline;
 }
-
+.section {
+    padding-top: 4rem; /* prevent top overlap heading section*/
+}
+/*header*/
+#header {
+    padding-top: 80px;
+}
 /*footer*/
 
 #contact {
     background-color: var(--primary-color);
     color: var(--text-color-light);
 }
-.social-links {
+
+#contact .social-links i {
+    color: var(--interactive-color);
     font-size: 1.8rem;
     margin-right: 10px;
-    color: var(--interactive-color);
+}
+
+#contact .social-links i:hover {
+    color: var(--highlight-color);
 }

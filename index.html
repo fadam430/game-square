@@ -19,7 +19,7 @@
 
 <body class="d-flex flex-column min-vh-100">
     <!-- nav bar section -->
-        <nav id="navbar" class="navbar navbar-expand-lg ">
+        <nav id="navbar" class="navbar navbar-expand-lg fixed-top">
     <div class="container-fluid ">
         <a class="navbar-brand" href="index.html">
             <img src="assets/images/rsz_gamesquare_logo.jpg" alt="Games Square logo" width="35">
@@ -46,10 +46,51 @@
     </div>
     </nav>
     <!-- header section -->
-        
+    <header id="header" class="container section">
+        <div class="row">
+            <div class="col-12 text-center mb-2">
+                <h1>Buy & Sell Second-Hand Games - All Platforms</h1>
+            </div>
+            <div class="col-12 col-xl-12 ml-2">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                        <img src="assets/images/doom.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="assets/images/last_of_us_part_1_deluxe.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                        <img src="assets/images/nfs_heat.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                    </div>
+            </div>
+
+        </div>
+    </header>
 
     <!-- main content -->
-
+    <section id="about" class="container section mb-4">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="display-6 text-center mb-4">About</h2>
+                </div>
+                <div class="col-12 text-center">
+                    <p>
+                        Games Square is your ultimate destination for second-hand video games, where top titles meet unbeatable prices. Whether you're buying, selling, or trading, we make the process fast, fair, and gamer-friendly. Our carefully curated collection spans all major platforms—PlayStation, Xbox, Nintendo, and PC. Level up your gaming experience without breaking the bank.
+                    </p>
+                </div>
+            </div>
+    </section>
     
     <!-- footer -->
 <!-- mt-auto class keep a footer bottom of the page-->
@@ -60,12 +101,13 @@
                     <h2 class="my-4">Contact Us!</h2>
                 </div>
                 <!--contact info-->
-                <div class="col-12 col-md-6 col-xl-4">
-                    <h3 class="sub-heading-color">Contact info</h3>
+                
+                <div class="col-8 col-md-12 col-xl-4 text-center">
                     <p><i class="fa-solid fa-phone"></i> 012 345 6789<br>
                     <i class="fa-regular fa-paper-plane"></i> info@gamesquare.com</p>
                     <h4>Follow Us</h4>
-                    <div class="social-links my-3">
+                    
+                    <div class="social-links my-3 text-center">
                         <a href="https://www.instagram.com/" target="_blank" aria-label="Visit our Instagram page (open in new tab)" rel="noopener"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://www.facebook.com/" target="_blank" aria-label="Visit our Facebook page (open in new tab)" rel="noopener"><i class="fa-brands fa-square-facebook"></i></a>
                         <a href="https://x.com/" target="_blank" aria-label="Visit our X feeds (open in new tab)" rel="noopener"><i class="fa-brands fa-x-twitter"></i></a>
@@ -82,5 +124,27 @@
 
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/14c4b12b2c.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let section = document.querySelector(e.target.getAttribute("href"));
+                    if (section) {
+                        e.preventDefault(); // Prevent default anchor click behavior
+                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
+                        window.scroll({
+                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
+                            behavior: "smooth",
+                        });
+                        document
+                            .querySelector(".navbar-collapse")
+                            .classList.remove("show"); // Collapse navbar
+                    }
+                });
+            });
+    </script>
 </body>
 </html>
