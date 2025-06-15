@@ -36,7 +36,7 @@
                         <a class="nav-link" href="games.html">Games</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="selltrade.html">Sell/Trade</a>
+                        <a class="nav-link active" aria-current="page" href="buysell.html">Sell/Trade</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
@@ -49,7 +49,7 @@
     <header id="header" class="container section mb-4">
         <div class="row justify-content-center">
             <div class="col-12 col-md-8 text-center text-xl-start">
-                <h3 class="display-3">Sell or Trade Your Games</h3>
+                <h3 class="display-3 text-center">Sell or Trade Your Games</h3>
             </div>
         </div>
     </header>
@@ -57,29 +57,30 @@
     <!-- main content -->
     <section id="selltrade-form" class="container section">
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-12 col-md-6 ">
                 <form method="get">
-                <div class="col-6 col-lg-6 mb-3 form-check">
-                    <input type="radio" class="form-check-input" id="exampleCheck1" required>
-                    <label class="form-check-label" for="exampleCheck1">Sell</label>
-                </div>
-                <div class="mb-3 form-check">
-                    <input type="radio" class="form-check-input" id="exampleCheck1" required>
-                    <label class="form-check-label" for="exampleCheck1">Trade</label>
-                </div>
-                <div class="col-12 mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Full name</label>
-                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    
+                <div class="mb-3">
+                    <input type="radio" id="sell" name="sell/trade" value="Sell">
+                    <label for="sell">Sell</label><br>
                 </div>
                 <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <input type="radio" id="trade" name="sell/trade" value="Trade">
+                    <label for="trade">Trade</label><br>
                 </div>
-                <div class="mb-3">
+                <div class="col-12  mb-3">
+                    <label for="full name" class="form-label">Full name</label>
+                    <input type="text" class="form-control" id="full name" name="Full name" required>
+                </div>
+                <div class="col-12  mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="col-12  mb-3">
                     <label for="exampleInputPassword1" class="form-label">Game name</label>
-                    <input type="text" class="form-control" id="exampleInputPassword1" required>
+                    <input type="text" class="form-control" id="game name" required>
                 </div>
-                <label for="event-type" class="form-label">Platform</label>
+                <label for="event-type" class=" form-label">Platform</label>
                                     <select id="event-type" class="form-select" name="event-type" required>
                                         <option value="" selected>Select</option>
                                         <option value="PC">PC</option>
@@ -96,7 +97,7 @@
                                         <option value="Bad">Bad</option>
                                     </select>
 
-                <button type="button" class="btn btn-primary my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                <button type="submit" class="btn costume-button my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

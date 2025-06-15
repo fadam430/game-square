@@ -19,6 +19,9 @@ h1,h2,h3 {
     font-family: "Orbitron", sans-serif;
     color: var(--text-color-light);
 }
+h3 {
+    text-align: center;
+}
 #games p {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
@@ -34,13 +37,27 @@ h1,h2,h3 {
     font-size: 1.1rem;
     color: var(--highlight-color);
 }
+
 #games .card-body {
     background-color: var(--primary-color);
     color: var(--text-color-light);
 }
+.card-img-top {
+    height: 300px;
+}
+
 .card {
     border: none;
     width: 300px;
+}
+/*submit button*/
+.costume-button {
+    color: var(--ascent-color);
+    background-color: var(--primary-color);
+}
+.costume-button:hover {
+    color: var(--highlight-color);
+    background-color: var(--background-color);
 }
 
 /*nav bar*/
@@ -85,3 +102,15 @@ h1,h2,h3 {
 #contact .social-links i:hover {
     color: var(--highlight-color);
 }
+
+/* media queries */
+
+/* Medium device tablet and 768px and up  */
+@media screen and (min-width:768px){
+    /* Make all games card same height for consistency*/
+    #games .card-body {
+        min-height: 140px;
+    }
+    /* Make all favorite card responsive*/
+    
+    }
