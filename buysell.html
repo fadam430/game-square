@@ -58,7 +58,7 @@
     <section id="selltrade-form" class="container section">
         <div class="row justify-content-center">
             <div class="col-12 col-md-6 ">
-                <form method="get">
+                <form action="success.html" method="get">
                     
                 <div class="mb-3">
                     <input type="radio" id="sell" name="sell/trade" value="Sell">
@@ -97,26 +97,8 @@
                                         <option value="Bad">Bad</option>
                                     </select>
 
-                <button type="submit" class="btn costume-button my-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+                <button type="submit" class="btn costume-button my-4">Submit</button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                    <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <button type="button" class="btn btn-primary">Save changes</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
         </form>
             </div>
         </div>
@@ -156,26 +138,6 @@
     <!-- Font Awesome kit -->
     <script src="https://kit.fontawesome.com/14c4b12b2c.js" crossorigin="anonymous"></script>
 
-    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
-    <script>
-        document
-            .querySelectorAll(".navbar-collapse .nav-link")
-            .forEach((link) => {
-                link.addEventListener("click", function (e) {
-                    let section = document.querySelector(e.target.getAttribute("href"));
-                    if (section) {
-                        e.preventDefault(); // Prevent default anchor click behavior
-                        let navbarHeight = document.querySelector(".navbar-toggler").offsetHeight;
-                        window.scroll({
-                            top: section.offsetTop - navbarHeight, // Adjust for navbar height
-                            behavior: "smooth",
-                        });
-                        document
-                            .querySelector(".navbar-collapse")
-                            .classList.remove("show"); // Collapse navbar
-                    }
-                });
-            });
-    </script>
+    
 </body>
 </html>

@@ -22,7 +22,7 @@ h1,h2,h3 {
 h3 {
     text-align: center;
 }
-#games p {
+#games p, #success p {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
 }
