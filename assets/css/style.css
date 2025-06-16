@@ -22,7 +22,7 @@ h1,h2,h3 {
 h3 {
     text-align: center;
 }
-#games p, #success p, #selltrade-form {
+#games p, #success p, #selltrade-form, #about p {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
 }
@@ -89,6 +89,10 @@ h3 {
 #header {
     padding-top: 80px;
 }
+
+#header img {
+    max-height: 530px;
+}
 /*footer*/
 
 #contact {
@@ -108,7 +112,7 @@ h3 {
 
 /* media queries */
 
-/* Medium device tablet and 768px and up  */
+/* Medium device tablet  768px and up  */
 @media screen and (min-width:768px){
     /* Make all games card same height for consistency*/
     #games .card-body {
@@ -121,3 +125,35 @@ h3 {
         margin-top: 0.5rem;
     }
     }
+/*  Large device  992px and up  */
+@media screen and (min-width:992px) {
+    
+
+    #header .carousel-inner {
+        width: 65%;
+        margin-left: 10rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/*  Large device  1200px and up  */
+@media screen and (min-width:1200px) {
+    
+
+    #header .carousel-inner {
+        width: 57%;
+        margin-left: 15rem;
+        margin-top: 0.5rem;
+    }
+}
+
+/*  Large device  1400px and up  */
+@media screen and (min-width:1400px) {
+    
+
+    #header .carousel-inner {
+        width: 50%;
+        margin-left: 21rem;
+        margin-top: 0.5rem;
+    }
+}
