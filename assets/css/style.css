@@ -22,7 +22,7 @@ h1,h2,h3 {
 h3 {
     text-align: center;
 }
-#games p, #success p {
+#games p, #success p, #selltrade-form {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
 }
@@ -54,11 +54,14 @@ h3 {
 .costume-button {
     color: var(--ascent-color);
     background-color: var(--primary-color);
+    font-family: "Exo 2", sans-serif;
 }
 .costume-button:hover {
     color: var(--highlight-color);
     background-color: var(--background-color);
 }
+/*carousel */
+
 
 /*nav bar*/
 
@@ -111,6 +114,10 @@ h3 {
     #games .card-body {
         min-height: 140px;
     }
-    /* Make all favorite card responsive*/
-    
+    /* carousel  responsive*/
+    #header .carousel-inner {
+        width: 90%;
+        margin-left: 2rem;
+        margin-top: 0.5rem;
+    }
     }
