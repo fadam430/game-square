@@ -57,15 +57,21 @@
             <h2 class="text-center mb-4">Please fill out the form carefully!</h2>
             <div class="col-12 col-md-6 ">
                 <form action="success.html" method="get">
-                    
-                <div class="mb-3">
-                    <input type="radio" id="sell" name="sell/trade" value="Sell">
-                    <label for="sell">Sell</label><br>
-                </div>
-                <div class="mb-3">
-                    <input type="radio" id="trade" name="sell/trade" value="Trade">
-                    <label for="trade">Trade</label><br>
-                </div>
+                    <div class="d-flex justify-content-evenly">
+                        <div class="mb-3">
+                            <input type="radio" id="sell" name="sell/trade" value="Sell">
+                            <label for="sell">Sell</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" id="trade" name="sell/trade" value="Trade">
+                            <label for="trade">Trade</label>
+                        </div>
+                        <div class="mb-3">
+                            <input type="radio" id="offer" name="sell/trade" value="offer">
+                            <label for="offer">Offer</label>
+                        </div>
+                    </div>  
+                
                 <div class="col-12  mb-3">
                     <label for="full_name" class="form-label">Full name</label>
                     <input type="text" class="form-control" id="full_name" name="full_name" required>

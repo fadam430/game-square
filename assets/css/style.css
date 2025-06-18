@@ -64,10 +64,15 @@ h3 {
     color: var(--interactive-color);
     background-color: var(--primary-color);
     font-family: "Exo 2", sans-serif;
+    font-size: 2rem;
 }
 .costume-button:hover {
     color: var(--highlight-color);
     background-color: var(--background-color);
+}
+
+strong {
+    text-shadow: 1px 1px 2px black, 0 0 25px var(--interactive-color), 0 0 5px var(--highlight-color);
 }
 /*carousel */
 
@@ -92,7 +97,7 @@ h3 {
     text-decoration: underline;
 }
 .section {
-    padding-top: 4rem; /* prevent top overlap heading section*/
+    padding-top: 2rem; /* prevent top overlap heading section*/
 }
 /*header*/
 #header {
