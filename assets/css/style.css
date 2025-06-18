@@ -32,6 +32,10 @@ h3 {
     color: var(--interactive-color);
 }
 
+#logo:hover {
+    text-shadow: 1px 1px 2px black, 0 0 25px var(--interactive-color), 0 0 5px var(--highlight-color);
+}
+
 #games a:hover {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
@@ -49,10 +53,11 @@ h3 {
 .card {
     border: none;
     width: 300px;
+
 }
 /*submit button*/
 .costume-button {
-    color: var(--ascent-color);
+    color: var(--interactive-color);
     background-color: var(--primary-color);
     font-family: "Exo 2", sans-serif;
 }
@@ -87,12 +92,14 @@ h3 {
 }
 /*header*/
 #header {
-    padding-top: 80px;
+    padding-top: 61px;
 }
 
 #header img {
-    max-height: 530px;
+    max-height: 100vh;
 }
+
+
 /*footer*/
 
 #contact {
@@ -115,45 +122,22 @@ h3 {
 /* Medium device tablet  768px and up  */
 @media screen and (min-width:768px){
     /* Make all games card same height for consistency*/
-    #games .card-body {
-        min-height: 140px;
-    }
-    /* carousel  responsive*/
-    #header .carousel-inner {
-        width: 90%;
-        margin-left: 2rem;
-        margin-top: 0.5rem;
-    }
-    }
+
+}
+    /* carousel  responsive */
+
+
 /*  Large device  992px and up  */
 @media screen and (min-width:992px) {
     
-
-    #header .carousel-inner {
-        width: 65%;
-        margin-left: 10rem;
-        margin-top: 0.5rem;
-    }
 }
 
 /*  Large device  1200px and up  */
 @media screen and (min-width:1200px) {
     
-
-    #header .carousel-inner {
-        width: 57%;
-        margin-left: 15rem;
-        margin-top: 0.5rem;
-    }
 }
 
 /*  Large device  1400px and up  */
 @media screen and (min-width:1400px) {
     
-
-    #header .carousel-inner {
-        width: 50%;
-        margin-left: 21rem;
-        margin-top: 0.5rem;
-    }
 }
