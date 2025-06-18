@@ -47,7 +47,7 @@ h3 {
     color: var(--text-color-light);
 }
 .card-img-top {
-    height: 300px;
+    height: 268px;
 }
 
 .card {
@@ -122,14 +122,24 @@ h3 {
 /* Medium device tablet  768px and up  */
 @media screen and (min-width:768px){
     /* Make all games card same height for consistency*/
-
+    .card-img-top {
+    height: 300px;
+    }
+    #games .container {
+        max-width: 700px;
+    }
 }
     /* carousel  responsive */
 
 
 /*  Large device  992px and up  */
 @media screen and (min-width:992px) {
-    
+    #games .container {
+        max-width: 800px;
+    }
+    .card {
+        width: auto;
+    }
 }
 
 /*  Large device  1200px and up  */
