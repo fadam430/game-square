@@ -59,7 +59,7 @@
                 <form action="success.html" method="get">
                     <div class="d-flex justify-content-evenly">
                         <div class="mb-3">
-                            <input type="radio" id="sell" name="sell/trade" value="Sell">
+                            <input type="radio" id="sell" name="sell/trade" value="Sell" checked>
                             <label for="sell">Sell</label>
                         </div>
                         <div class="mb-3">
@@ -84,11 +84,29 @@
                     <label for="game_name" class="form-label">Game name</label>
                     <input type="text" class="form-control" id="game_name" required>
                 </div>
+                <!-- trade section-->
+                <div style="display: none;">
+                    <label for="tradein" class=" form-label">Game to trade in</label>
+                                    <select id="tradein" class="form-select" name="event-type" required>
+                                        <option value="" selected>Select</option>
+                                        <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
+                                        <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
+                                        <option value="Tom Clancy The Division">Tom Clancy The Division</option>
+                                        <option value="The Elder Scroll V Skyrim">The Elder Scroll V Skyrim</option>
+                                        <option value="The Witcher 3 Wild Hunt">The Witcher 3 Wild Hunt</option>
+                                    </select>
+                    <div class="col-12  mb-3">
+                        <label for="tradefor" class="form-label">Game to trade for</label>
+                        <input type="text" class="form-control" id="tradefor" required>
+                    </div>
+                </div>
+                <!-- offer section-->
+
                 <label for="platform" class=" form-label">Platform</label>
                                     <select id="platform" class="form-select" name="event-type" required>
                                         <option value="" selected>Select</option>
                                         <option value="PC">PC</option>
-                                        <option value="PS">PS</option>
+                                        <option value="PlayStation">Playstation</option>
                                         <option value="Xbox">Xbox</option>
                                     </select>
                 <label for="condition" class="form-label mt-2">Condition</label>
