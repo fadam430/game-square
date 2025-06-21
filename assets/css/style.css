@@ -93,6 +93,10 @@ strong {
 #navbar li  a:hover {
     background-color: var(--interactive-color);
 }
+#navbar img {
+    box-shadow: 0 0 10px 0 rgba(0, 207, 253, 0.5);
+    
+}
 .active {
     text-decoration: underline;
 }
