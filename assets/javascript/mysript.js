@@ -1,15 +1,12 @@
-const radioButtons = document.querySelectorAll('input[name=""sell/trade""]');
-const tradeForm = document.getElementById('form-trade');
-const offerForm = document.getElementById('form-offer');
+const radios = document.querySelectorAll('input[name="action"]');
+const formSections = document.querySelectorAll('.action-form');
 
-radioButtons.forEach(radio => {
+radios.forEach(radio => {
     radio.addEventListener('change', () => {
-      if (radio.value === 'form-trade') {
-        tradeForm.style.display = 'inline';
-        offerForm.style.display = 'none';
-      } else {
-        tradeForm.style.display = 'none';
-        offerForm.style.display = 'inline';
-      }
+        const selectedValue = radio.value;
+
+    formSections.forEach(section => {
+        section.style.display = section.id === `form-${selectedValue}` ? 'block' : 'none';
     });
-  });
+    });
+});
