@@ -60,7 +60,7 @@
                     <div class="d-flex justify-content-evenly">
                         <div class="mb-3">
                             <input type="radio" id="sell" name="sell/trade" value="Sell" checked>
-                            <label for="sell">Sell</label>
+                            <label for="sell" >Sell</label>
                         </div>
                         <div class="mb-3">
                             <input type="radio" id="trade" name="sell/trade" value="Trade">
@@ -71,57 +71,103 @@
                             <label for="offer">Offer</label>
                         </div>
                     </div>  
-                
-                <div class="col-12  mb-3">
-                    <label for="full_name" class="form-label">Full name</label>
-                    <input type="text" class="form-control" id="full_name" name="full_name" required>
-                </div>
-                <div class="col-12  mb-3">
-                    <label for="email" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="col-12  mb-3">
-                    <label for="game_name" class="form-label">Game name</label>
-                    <input type="text" class="form-control" id="game_name" required>
-                </div>
-                <!-- trade section-->
-                <div style="display: none;">
-                    <label for="tradein" class=" form-label">Game to trade in</label>
-                                    <select id="tradein" class="form-select" name="event-type" required>
-                                        <option value="" selected>Select</option>
-                                        <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
-                                        <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
-                                        <option value="Tom Clancy The Division">Tom Clancy The Division</option>
-                                        <option value="The Elder Scroll V Skyrim">The Elder Scroll V Skyrim</option>
-                                        <option value="The Witcher 3 Wild Hunt">The Witcher 3 Wild Hunt</option>
-                                    </select>
-                    <div class="col-12  mb-3">
-                        <label for="tradefor" class="form-label">Game to trade for</label>
-                        <input type="text" class="form-control" id="tradefor" required>
+                    <div class="d-flex justify-content-center">
+                        <!-- Button trigger modal -->
+                            <button type="button" class="btn costume-button2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            How it works
+                            </button>
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                <div class="modal-header">
+                                    <h1 class="modal-title fs-5" id="exampleModalLabel">How it works</h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <p><strong>Sell:</strong> List your game at your chosen price. Once it's sold, you get paid directly.</p>
+                                    <p><strong>Trade:</strong> Swap your game for another user's game. Both parties agree on the exchange.</p>
+                                    <p><strong>Offer:</strong> Let buyers propose their own price or trade. You accept or decline based on what works for you.</p>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn costume-button2" data-bs-dismiss="modal">Close</button>
+                                
+                                </div>
+                                </div>
+                            </div>
+                            </div>
                     </div>
-                </div>
-                <!-- offer section-->
+                            <div class="col-12  mb-3">
+                                <label for="full_name" class="form-label">Full name</label>
+                                <input type="text" class="form-control" id="full_name" name="full_name" required>
+                            </div>
+                            <div class="col-12  mb-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <!-- sell section-->
+                            <div class="formfield">
+                                <div class="col-12  mb-3">
+                                <label for="game_name" class="form-label">Game name</label>
+                                <input type="text" class="form-control" id="game_name" required>
+                            </div>
 
-                <label for="platform" class=" form-label">Platform</label>
-                                    <select id="platform" class="form-select" name="event-type" required>
-                                        <option value="" selected>Select</option>
-                                        <option value="PC">PC</option>
-                                        <option value="PlayStation">Playstation</option>
-                                        <option value="Xbox">Xbox</option>
-                                    </select>
-                <label for="condition" class="form-label mt-2">Condition</label>
-                                    <select id="condition" class="form-select" name="event-type" required>
-                                        <option value="" selected>Select</option>
-                                        <option value="Excellent">Excellent</option>
-                                        <option value="Very Good">Very Good</option>
-                                        <option value="Good">Good</option>
-                                        <option value="Fair">Fair</option>
-                                        <option value="Bad">Bad</option>
-                                    </select>
+                            <label for="platform" class="form-label">Platform</label>
+                                                <select id="platform" class="form-select" name="event-type" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option value="PC">PC</option>
+                                                    <option value="PlayStation">Playstation</option>
+                                                    <option value="Xbox">Xbox</option>
+                                                </select>
+                            <label for="condition" class="form-label mt-2">Condition</label>
+                                                <select id="condition" class="form-select" name="event-type" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option value="Excellent">Excellent</option>
+                                                    <option value="Very Good">Very Good</option>
+                                                    <option value="Good">Good</option>
+                                                    <option value="Fair">Fair</option>
+                                                    <option value="Bad">Bad</option>
+                                                </select>
+                            </div>
 
-                <button type="submit" class="btn costume-button my-4">Submit</button>
+                            <!-- trade section-->
+                            <div class="formfield" id="form-trade" style="display: none;">
+                                <label for="tradein" class="form-label">Game to trade in</label>
+                                                <select id="tradein" class="form-select" name="event-type" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
+                                                    <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
+                                                    <option value="Tom Clancy The Division">Tom Clancy The Division</option>
+                                                    <option value="The Elder Scroll V Skyrim">The Elder Scroll V Skyrim</option>
+                                                    <option value="The Witcher 3 Wild Hunt">The Witcher 3 Wild Hunt</option>
+                                                </select>
+                                <div class="col-12  mb-3">
+                                    <label for="tradefor" class="form-label">Game to trade for</label>
+                                    <input type="text" class="form-control" id="tradefor" required>
+                                </div>
+                            </div>
+                            <!-- offer section-->
 
-        </form>
+                            <div class="formfield" id="form-offer" style="display: none;">
+                                <label for="offer" class="form-label">Game to Buy</label>
+                                                <select id="offerdropdown" class="form-select" name="event-type" required>
+                                                    <option value="" selected>Select</option>
+                                                    <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
+                                                    <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
+                                                    <option value="Tom Clancy The Division">Tom Clancy The Division</option>
+                                                    <option value="The Elder Scroll V Skyrim">The Elder Scroll V Skyrim</option>
+                                                    <option value="The Witcher 3 Wild Hunt">The Witcher 3 Wild Hunt</option>
+                                                </select>
+                                <div class="col-12  mb-3">
+                                    <label for="offerfor" class="form-label">Offer Price</label>
+                                    <input type="number" class="form-control" id="offer" placeholder="£" required>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn costume-button my-4">Submit</button>
+
+                </form>
             </div>
         </div>
     </section>

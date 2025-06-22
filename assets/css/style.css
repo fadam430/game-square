@@ -66,7 +66,14 @@ h3 {
     font-family: "Exo 2", sans-serif;
     font-size: 2rem;
 }
-.costume-button:hover {
+.costume-button2 {
+    color: var(--interactive-color);
+    background-color: var(--primary-color);
+    font-family: "Exo 2", sans-serif;
+    font-size: 1rem;
+}
+
+.costume-button:hover, .costume-button2:hover {
     color: var(--highlight-color);
     background-color: var(--background-color);
 }
@@ -111,8 +118,10 @@ strong {
 #header img {
     max-height: 100vh;
 }
-
-
+/*modal*/
+.modal-content {
+    background-color: var(--background-color);
+}
 /*footer*/
 
 #contact {
