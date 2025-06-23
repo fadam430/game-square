@@ -5,12 +5,11 @@
 :root {
     --background-color: #121212;  /* Dark Charcoal Black , Background, base layout*/
     --primary-color: #1f1f1f;  /* Rich Gunmetal Gray, Cards, sections, nav background*/
-    --ascent-color: #FF3C38; /*Vivid Crimson Red Buttons, hover elements*/
     --highlight-color:#B4FF00; /* Neon Lime Green, Sale tags, promo badges, icons*/
     --interactive-color: #00CFFD; /*Electric Blue, Hover states, links, icons*/
     --text-color-light: #F5F5F5; /*Soft White, main body text*/
-    --text-color-muted: #A0A0A0; /*Steel Gray, Subtext, secondary labels*/
 }
+/* main section*/ 
 body {
     color: var(--text-color-light);
     background-color: var(--background-color);
@@ -22,7 +21,7 @@ h1,h2,h3 {
 h3 {
     text-align: center;
 }
-
+/* font */
 #games p, #success p, #selltrade-form, #about p {
     font-family: "Exo 2", sans-serif;
     font-size: 1.1rem;
@@ -59,7 +58,9 @@ h3 {
     width: 300px;
 
 }
+
 /*submit button*/
+
 .costume-button {
     color: var(--interactive-color);
     background-color: var(--primary-color);
@@ -84,7 +85,7 @@ h3 {
 strong {
     text-shadow: 1px 1px 2px black, 0 0 25px var(--interactive-color), 0 0 5px var(--highlight-color);
 }
-/*carousel */
+
 
 
 /*nav bar*/
@@ -144,27 +145,3 @@ strong {
     color: var(--highlight-color);
 }
 
-/* media queries */
-
-/* Medium device tablet  768px and up  */
-@media screen and (min-width:768px){
-    /* Make all games card same height for consistency*/
-    
-}
-    /* carousel  responsive */
-
-
-/*  Large device  992px and up  */
-@media screen and (min-width:992px) {
-    
-}
-
-/*  Large device  1200px and up  */
-@media screen and (min-width:1200px) {
-    
-}
-
-/*  Large device  1400px and up  */
-@media screen and (min-width:1400px) {
-    
-}

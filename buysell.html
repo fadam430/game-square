@@ -56,22 +56,21 @@
         <div class="row justify-content-center px-3">
             <h3 class="text-center mb-4">Please fill out the form carefully!</h3>
             <div class="col-12 col-md-6 ">
-                <form action="success.html" method="get">
-                    <div class="d-flex justify-content-evenly">
+
+                <div class="d-flex justify-content-evenly">
                         <div class="mb-3">
-                            <input type="radio" id="sell" name="action" value="sell" checked>
+                            <input type="radio" id="sell" name="formType" value="sell" checked>
                             <label >Sell</label>
                         </div>
                         <div class="mb-3">
-                            <input type="radio" id="trade" name="action" value="trade">
+                            <input type="radio" id="trade" name="formType" value="trade">
                             <label>Trade</label>
                         </div>
                         <div class="mb-3">
-                            <input type="radio" id="offer" name="action" value="offer">
+                            <input type="radio" id="offer" name="formType" value="offer">
                             <label>Offer</label>
                         </div>
                     </div> 
-                    
                     <!-- Modal section -->
                     <div class="d-flex justify-content-center">
                         <!-- Button trigger modal -->
@@ -100,23 +99,25 @@
                             </div>
                             </div>
                     </div>
+                <form id="sellForm" action="success.html" method="get">
+                    
+                    
                             
-                            <!-- sell section-->
-                    <div class="action-form" id="form-sell">
-                                <div class="col-12  mb-3">
-                                <label for="game_name" class="form-label">Game name</label>
-                                <input type="text" class="form-control" id="game_name" required>
-                            
-
-                            <div class="col-12  mb-3">
+                    <div class="col-12  mb-3">
                                 <label for="full_name" class="form-label">Full name</label>
                                 <input type="text" class="form-control" id="full_name" name="full_name" required>
                             </div>
                             <div class="col-12  mb-3">
                                 <label for="email" class="form-label">Email address</label>
                                 <input type="email" class="form-control" id="email" name="email" required>
-                            </div>
+                    </div>
 
+                    <div class="action-form" id="form-sell">
+                            
+                            <div class="col-12  mb-3">
+                                <label for="game_name" class="form-label">Game name</label>
+                                <input type="text" class="form-control" id="game_name" required>
+                            </div>
                             <label for="platform" class="form-label">Platform</label>
                                                 <select id="platform" class="form-select" name="event-type" required>
                                                     <option value="" selected>Select</option>
@@ -133,20 +134,23 @@
                                                     <option value="Fair">Fair</option>
                                                     <option value="Bad">Bad</option>
                                                 </select>
-                            </div>
+                    
                         </div>
-                            <!-- trade section-->
-                            
-                        <div class="action-form" id="form-trade" style="display: none;">
 
-                                <div class="col-12  mb-3">
+                            <button type="submit" class="btn costume-button my-4">Submit</button>
+                </form>
+
+                <form id="tradeForm" action="success.html" method="GET">
+                    <div class="col-12  mb-3">
                                 <label for="full_name" class="form-label">Full name</label>
-                                <input type="text" class="form-control" id="trade_full_name" name="trade_full_name" required>
+                                <input type="text" class="form-control" id="full_name" name="full_name" required>
                             </div>
                             <div class="col-12  mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="trade-email" name="trade-email" required>
-                            </div>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                        <div class="action-form" id="form-trade">
 
                                 <label for="tradein" class="form-label">Game to trade in</label>
                                                 <select id="tradein" class="form-select" name="event-type" required>
@@ -163,18 +167,20 @@
                                 </div>
                         </div>
 
-                            <!-- offer section-->
+                            <button type="submit" class="btn costume-button my-4">Submit</button>
+                </form>
 
-                        <div class="action-form" id="form-offer" style="display: none;">
-
-                                <div class="col-12  mb-3">
+                <form id="offerForm" action="success.html" method="GET">
+                    <div class="col-12  mb-3">
                                 <label for="full_name" class="form-label">Full name</label>
-                                <input type="text" class="form-control" id="sell_full_name" name="sell_full_name" required>
+                                <input type="text" class="form-control" id="full_name" name="full_name" required>
                             </div>
                             <div class="col-12  mb-3">
                                 <label for="email" class="form-label">Email address</label>
-                                <input type="email" class="form-control" id="sell_email" name="sell_email" required>
-                            </div>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                        <div class="action-form" id="form-offer">
 
                                 <label for="offerdropdown" class="form-label">Game to Buy</label>
                                                 <select id="offerdropdown" class="form-select" name="event-type" required>
@@ -186,13 +192,12 @@
                                                     <option value="The Witcher 3 Wild Hunt">The Witcher 3 Wild Hunt</option>
                                                 </select>
                                 <div class="col-12  mb-3">
-                                    <label for="offerfor" class="form-label">Offer Price</label>
+                                    <label for="offer_price" class="form-label">Offer Price</label>
                                     <input type="number" class="form-control" id="offer_price" placeholder="£" required>
                                 </div>
                         </div>
 
                             <button type="submit" class="btn costume-button my-4">Submit</button>
-
                 </form>
             </div>
         </div>
