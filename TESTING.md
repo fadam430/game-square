@@ -230,4 +230,4 @@ Automated testing was completed via third party applications, in order to assess
 
 ---
 
-[Click here](https://GitHub.com/BAK2K3/hard-drivers/blob/master/README.md) to return to the main README.md.
+[Click here](https://github.com/fadam430/game-square/blob/main/README.md) to return to the main README.md.
