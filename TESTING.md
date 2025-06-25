@@ -166,13 +166,11 @@ have been discussed together.
 
 Cross-Browser compatibility was tested via applying the methodology described above within each browser detailed below.
 
-## Chrome/Firefox/Edge/Brave
+## Chrome/Firefox/Edge/Brave/Safari
 
 All functionality worked as intended.
+As I do not have access to a device which is compatible with Safari, but I send two of my friends and they try it. They sad everything was oke.
 
-## Safari
-
-As I do not have access to a device which is compatible with Safari.
 
 # Automated Testing
 
