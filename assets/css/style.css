@@ -112,7 +112,7 @@ strong {
     text-decoration: underline;
 }
 .section {
-    padding-top: 2rem; /* prevent top overlap heading section*/
+    padding-top: 61px; /* prevent top overlap heading section*/
 }
 /*header*/
 #header {
@@ -127,6 +127,13 @@ strong {
     background-color: var(--background-color);
 }
 /*footer*/
+
+a {
+    color: var(--interactive-color);
+}
+a:hover {
+    color: var(--highlight-color);
+}
 
 #contact {
     background-color: var(--primary-color);

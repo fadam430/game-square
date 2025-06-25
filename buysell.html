@@ -60,15 +60,15 @@
                 <div class="d-flex justify-content-evenly">
                         <div class="mb-3">
                             <input type="radio" id="sell" name="formType" value="sell" checked>
-                            <label >Sell</label>
+                            <label for="sellForm" >Sell</label>
                         </div>
                         <div class="mb-3">
                             <input type="radio" id="trade" name="formType" value="trade">
-                            <label>Trade</label>
+                            <label for="tradeForm">Trade</label>
                         </div>
                         <div class="mb-3">
                             <input type="radio" id="offer" name="formType" value="offer">
-                            <label>Offer</label>
+                            <label for="offerForm">Offer</label>
                         </div>
                     </div> 
                     <!-- Modal section -->
@@ -134,10 +134,10 @@
                                                     <option value="Fair">Fair</option>
                                                     <option value="Bad">Bad</option>
                                                 </select>
-                    
                         </div>
-
+                        <div class="d-flex justify-content-center">
                             <button type="submit" class="btn costume-button my-4">Submit</button>
+                        </div>
                 </form>
 
                 <form id="tradeForm" action="success.html" method="GET">
@@ -150,10 +150,10 @@
                                 <input type="email" class="form-control" id="email-trade" name="email" required>
                     </div>
 
-                        <div class="action-form" id="form-trade">
+                        <div class="action-form mb-3" id="form-trade">
 
                                 <label for="tradein" class="form-label">Game to trade in</label>
-                                                <select id="tradein" class="form-select" name="event-type" required>
+                                                <select id="tradein" class="form-select mb-3" name="event-type" required>
                                                     <option value="" selected>Select</option>
                                                     <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
                                                     <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
@@ -167,7 +167,9 @@
                                 </div>
                         </div>
 
+                        <div class="d-flex justify-content-center">
                             <button type="submit" class="btn costume-button my-4">Submit</button>
+                        </div>
                 </form>
 
                 <form id="offerForm" action="success.html" method="GET">
@@ -183,7 +185,7 @@
                         <div class="action-form" id="form-offer">
 
                                 <label for="offerdropdown" class="form-label">Game to Buy</label>
-                                                <select id="offerdropdown" class="form-select" name="event-type" required>
+                                                <select id="offerdropdown" class="form-select mb-3" name="event-type" required>
                                                     <option value="" selected>Select</option>
                                                     <option value="Call of Duty Advance Warefare">Call of Duty Advance Warefare</option>
                                                     <option value="Lust of Us Episode 1">Lust of Us Episode 1</option>
@@ -193,11 +195,13 @@
                                                 </select>
                                 <div class="col-12  mb-3">
                                     <label for="offer_price" class="form-label">Offer Price</label>
-                                    <input type="number" class="form-control" id="offer_price" placeholder="£" required>
+                                    <input type="number" class="form-control" id="offer_price" min="1" max="100" placeholder="£" required>
                                 </div>
                         </div>
-
+                        <div class="d-flex justify-content-center">
                             <button type="submit" class="btn costume-button my-4">Submit</button>
+                        </div>
+                            
                 </form>
             </div>
         </div>
@@ -211,8 +215,8 @@
             <div class="row ">
                 <div class="col-12 col-lg-6 text-center">
                     <h2>Contact Us!</h2>
-                    <p><i class="fa-solid fa-phone"></i> 012 345 6789</p>
-                    <p><i class="fa-regular fa-paper-plane"></i> info@gamesquare.com</p>
+                    <p><a href="tel:+44 7012 345 6789"><i class="fa-solid fa-phone"></i> 012 345 6789</a></p>
+                    <p><a href="mailto:info@gamesquare.com"><i class="fa-regular fa-paper-plane"></i> info@gamesquare.com</a></p>
                 </div>
                 <!--contact info-->
                 

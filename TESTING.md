@@ -93,8 +93,7 @@ All functionality for the Footer was tested on every page.
 * No visual effects are produced when the Social links are touched (mobile/table).
 * The Submit button produces the 'glow' effect, and changes from lightblue to neon lime green when touched (mobile/table).
 
-
-## Package Table
+## Modal
 
 * Modal Design ("How it's works"):
      
