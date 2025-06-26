@@ -11,7 +11,6 @@ The Main README documentation can be found under [README.md](README.md)
 >3. [Browser Testing](#browser-testing)
 >4. [Automated Testing](#automated-testing)
 >5. [Significant Bugs](#significant-bugs)
-
 >6. [Other Technical Difficulties](#other-technical-difficulties)
 
 # User Story Testing
@@ -74,7 +73,7 @@ Unless specifically stated, all functionality for the Navbar was tested on every
 * When the collapsed Navbar is displayed, ensure the dropdown (when displayed) does close when the user interacts with another part of the current page.
 * When the collapsed Navbar is displayed, ensure the dropdown does not overflow onto the Viewport Control/content of the page.
 * The navigation links display the appropriate effects when hovered (desktop) over:
-    * The link produces the 'glow' effect, and changes from inactive (black) to active (lightblue).
+    * The link produces the 'glow' effect, and changes from inactive (Light Blue) to active (Neon Lime Green).
     * If the link is already in an active state, it only displays underscore effect and not change color.
 * The navigation links display the appropriate effects when touched (mobile/tablet).
     * Background change a highlight color.
@@ -88,17 +87,9 @@ All functionality for the Footer was tested on every page.
 * Footer elements maintain their position through navigation of the site.
 * When adjusting the horizontal viewport, ensure the Footer elements reposition themselves dynamically to maintain equal distance, and central position within their containers.
 * On small horizontal viewport, ensure the Social links stick together, and maintain their functionality. 
-* No visual effects are produced when the Social Links are hovered over with the mouse (desktop).
-* Hovering (desktop) over the Submit button produces the 'glow' effect, and changes from lightblue to neon lime green.
-* No visual effects are produced when the Social links are touched (mobile/table).
-* The Submit button produces the 'glow' effect, and changes from lightblue to neon lime green when touched (mobile/table).
-
-## Modal
-
-* Modal Design ("How it's works"):
-     
-    * The content is displayed centrally, and that all text is clear and visible.
-    * On larger viewport, the table fits comfortably on the page, and does not require unnecessary scrolling.
+* Visual effects are produced when the Social Links are hovered over with the mouse (desktop).
+* Hovering (desktop) over the Submit button produces the 'glow' effect, and changes from "Light Blue" to "Neon Lime Green".
+* Visual effects are produced when the Social links are touched (mobile/table).
 
 
 ## Sell/Trade/Offer Form
@@ -125,7 +116,7 @@ All functionality for the Footer was tested on every page.
 * Offer dropdown menu work working and show "select" title and required to fill the field.
 * Offer price field accepts any numbers, but requires at least one number.
     * No validation about the number either you can put negative or zero value in.
-* The form cannot be submitted without a valid price value entered.
+* The form cannot be submitted without a valid price value entered, valid between 1 - 100 .
 * On valid form submission that the Thank You model is presented, and that the form is cleared in full.  
 
 ## Modals
@@ -135,12 +126,14 @@ These tests applied to  (_"How it's works"_  Button):
 * The modal is displayed centrally, with the appropriate Header / Body / Footer.
 * The modal's "close" button functions as intended, and closes the modal.
 * The modal can be dismissed by clicking (desktop) and touching (phone/tablet) out of the modal area.
+* The content is displayed centrally, and that all text is clear and visible.
+* On larger viewport, the table fits comfortably on the page, and does not require unnecessary scrolling.
 * Pressing the escape key closes the modal.
 * The content of the modal fits appropriately.
 
 ## Viewport Control and Responsive Layout / Design
 
-The testing for these sections were combined. While the implementation of these functions are different, and serve different purposes, the testing process for each section coincided with each other and therefore
+The testing for these sections were combined. While the implementation of these functions are different, and serve different purposes, the testing process for each section with each other and therefore
 have been discussed together.
 
 * On all pages, the header and footer remains static, and the content in-between (i.e the Viewport Control) is dynamic.
@@ -153,11 +146,11 @@ have been discussed together.
 
 **Games Page**:
 * On all viewports, ensure that each card appropriate hight and width.
-* On all viewports, ensure each section/row resizes proportionately (as can be seen from the respective size of the image on each row.)
+* On all viewports, ensure each section/row resizes proportionately.
 * On all viewports, each section is proportionately spaced according to the size of the vertical viewport. 
 * On all viewports, the section containers the Viewport Control is scrollable, and that all content is visible.   
 
-**Enquire Page**:
+**Sell/Trade Page**:
 * On all viewports, ensure that the fields are visible, and are container within equal column widths.
 * On all viewports, ensure that the fields are resize dynamically when the horizontal viewport is adjusted.
 * On medium to small viewport, ensure the Form's fieldset and input sections resize dynamically when the horizontal viewport is adjusted.
