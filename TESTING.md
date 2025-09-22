@@ -1,4 +1,3 @@
-# Hard Drivers - Testing Documentation
 
 The Main README documentation can be found under [README.md](README.md)
 
